@@ -10,6 +10,20 @@
     background-position: center center;
 }
 
+/* Internet Explorer 対応 */
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .glyphicon::before {
+        display: block;
+        width: 1em;
+        height: 1.4em;
+        float: left;
+        content: "　";
+        background-repeat: no-repeat;
+        background-size: 1em 1em;
+        background-position: center center;
+    }
+}
+
 /* アイコン作成 */
 /* https://blog.s0014.com/posts/2017-01-19-il-to-svg/ */
 .glyphicon-arrow-down::before {
